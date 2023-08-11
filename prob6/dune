@@ -1,0 +1,3 @@
+(executable
+ (public_name prob6)
+ (name main))
