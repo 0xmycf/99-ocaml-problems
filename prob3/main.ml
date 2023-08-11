@@ -17,18 +17,14 @@ let rec save_nth ls i =
 ;;
 
 let () =
-  let n_at =
-    save_nth [ "a" ; "b" ] 2
-  in
+  let n_at = save_nth [ "a"; "b" ] 2 in
   match n_at with
   | Some x -> Printf.printf "%s\n" x
   | None -> print_endline "None"
 ;;
 
 let () =
-  let n_at =
-    save_nth [ "a" ] 2
-  in
+  let n_at = save_nth [ "a" ] 2 in
   match n_at with
   | Some x -> Printf.printf "%s\n" x
   | None -> print_endline "None"
@@ -44,7 +40,7 @@ let () =
 
 let () =
   let n_at =
-    try nth [ "a" ; "b" ] 2 with
+    try nth [ "a"; "b" ] 2 with
     | _ -> "Not found"
   in
   Printf.printf "%s\n" n_at
